@@ -47,6 +47,7 @@
     height: 100vh;
     background-color: #fff;
     width: 90vw;
+    font: Poppins;
 }
 
 .logo_heading {
@@ -127,7 +128,7 @@ input {
     border-radius: 8px;
     border: 1px solid #bac3bc80;
     opacity: 0px;
-    background: #3CC55380;
+    background: #3CC553;
     color: #fff;
     font-size: 16px;
     margin-top: 15px;
@@ -151,7 +152,7 @@ input {
 }
 
 .greenText {
-    color: #3CC55380;
+    color: #3CC553;
     ;
 }
 

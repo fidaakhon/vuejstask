@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/otp',
       name: 'otp',
       component: () => import('../views/OtpView.vue')
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/DashboardView.vue')
     }
   ]
 })
