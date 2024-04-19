@@ -1,29 +1,23 @@
-# vuejstask
+# vuejs Assignment task
 
-This template should help get you started developing with Vue 3 in Vite.
+This task is done using the vue.js framework and awesome fonts.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
 
 ### Compile and Hot-Reload for Development
+
+this task can be run using the following command
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### After ruinnig the command you can use the following liks to see the required pages
 
-```sh
-npm run build
-```
+this is login page
+http://localhost:5173/login
+
+this is otp page
+http://localhost:5173/otp
+
+this is dashboard page link
+http://localhost:5173/dashboard

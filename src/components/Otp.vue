@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="footer">
-            <p >By proceeding, you agree to the Terms of Service
+            <p>By proceeding, you agree to the Terms of Service
                 and <span class='greenText'>Privacy Policy</span></p>
         </div>
     </div>
@@ -70,6 +70,10 @@
     gap: 0px;
     opacity: 0px;
 
+}
+
+.subheading {
+    width: 30vw;
 }
 
 .headings_inputs {
@@ -166,6 +170,14 @@ input {
 
     .headings_inputs {
         width: 80vw;
+    }
+
+    .subheading {
+        width: 80vw;
+    }
+
+    input {
+        width: 15vw;
     }
 
 
