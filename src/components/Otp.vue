@@ -1,25 +1,23 @@
-<script>
-export default {
-    data() {
-        return {
-            otp: {
-                otp1: "",
-                otp2: "",
-                otp3: "",
-                otp4: ""
-            }
-        }
-    },
-    methods: {
-        otpSubmit() {
-            console.log("Otp has been submitted", this.otp)
-            this.otp.otp1 = ""
-            this.otp.otp2 = ""
-            this.otp.otp3 = ""
-            this.otp.otp4 = ""
-        }
-    }
+<script setup>
+import { ref } from 'vue';
+
+
+const otp = ref({
+    otp1: "",
+    otp2: "",
+    otp3: "",
+    otp4: ""
+})
+
+function otpSubmit() {
+    console.log("Otp has been submitted", otp.value)
+    otp.value.otp1 = ""
+    otp.value.otp2 = ""
+    otp.value.otp3 = ""
+    otp.value.otp4 = ""
 }
+
+
 </script>
 
 <template>
@@ -44,7 +42,7 @@ export default {
 
 
             <div class="submitButton">
-                <button class="btn" @click="otpSubmit" >Continue</button>
+                <button class="btn" @click="otpSubmit">Continue</button>
             </div>
 
             <div class="signup">

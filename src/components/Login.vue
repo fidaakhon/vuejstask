@@ -1,13 +1,10 @@
-<script >
-export default {
-    data(){
-        email: ""        
-    },
-    methods: {
-        handleSubmit() {
-            console.log("Loging in for the email : ", this.email)
-        }
-    }
+<script setup>
+import { ref } from 'vue';
+
+const email = ref("");
+
+function handleSubmit() {
+    console.log("logging in for the email", email.value)
 }
 </script>
 
@@ -45,7 +42,7 @@ export default {
             </div>
 
             <div class="submitButton">
-                <button class="btn" @click="handleSubmit" >Continue</button>
+                <button class="btn" @click="handleSubmit">Continue</button>
             </div>
 
             <div class="signup">
