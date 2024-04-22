@@ -1,4 +1,14 @@
-<script setup>
+<script >
+export default {
+    data(){
+        email: ""        
+    },
+    methods: {
+        handleSubmit() {
+            console.log("Loging in for the email : ", this.email)
+        }
+    }
+}
 </script>
 
 <template>
@@ -31,11 +41,11 @@
 
             <div class="emailInput">
                 <label for="emai">Your Email</label>
-                <input type="email" placeholder="eg- jhon@email.com" />
+                <input type="email" v-model="email" placeholder="eg- jhon@email.com" />
             </div>
 
             <div class="submitButton">
-                <button class="btn">Continue</button>
+                <button class="btn" @click="handleSubmit" >Continue</button>
             </div>
 
             <div class="signup">

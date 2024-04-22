@@ -262,16 +262,17 @@ body {
 }
 
 .logo1 h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-top: 2px;
 
 }
 
 .logo {
-    width: 26.32px;
-    height: 30.12px;
-    gap: 0px;
+    width: 25.32px;
+    height: 35.12px;
+    /* gap: 0px; */
     opacity: 0px;
 
 }

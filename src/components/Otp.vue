@@ -1,4 +1,25 @@
-<script setup>
+<script>
+export default {
+    data() {
+        return {
+            otp: {
+                otp1: "",
+                otp2: "",
+                otp3: "",
+                otp4: ""
+            }
+        }
+    },
+    methods: {
+        otpSubmit() {
+            console.log("Otp has been submitted", this.otp)
+            this.otp.otp1 = ""
+            this.otp.otp2 = ""
+            this.otp.otp3 = ""
+            this.otp.otp4 = ""
+        }
+    }
+}
 </script>
 
 <template>
@@ -15,15 +36,15 @@
             </div>
 
             <div class="inputs">
-                <input type="number">
-                <input type="number">
-                <input type="number">
-                <input type="number">
+                <input type="number" v-model="otp.otp1">
+                <input type="number" v-model="otp.otp2">
+                <input type="number" v-model="otp.otp3">
+                <input type="number" v-model="otp.otp4">
             </div>
 
 
             <div class="submitButton">
-                <button class="btn">Continue</button>
+                <button class="btn" @click="otpSubmit" >Continue</button>
             </div>
 
             <div class="signup">
@@ -119,10 +140,11 @@
 }
 
 input {
-    padding: 14px 16px;
+    padding: 18px 16px;
     width: 5vw;
     border-radius: 8px;
     border: 1px solid #bac3bc80;
+    font-size: 18px;
 }
 
 .btn {
