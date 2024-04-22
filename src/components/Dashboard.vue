@@ -41,9 +41,9 @@ import CarretDown from './icons/CarretDown.vue';
         </div>
 
         <div class="counting">
-            <div class="tasks">
+            <div class="tasks firstTask">
                 <p>Total project <span class="greenText">
-                        <CarretUp  /> 2
+                        <CarretUp /> 2
                     </span></p>
                 <h1 class="boldNumber">7</h1>
             </div>
@@ -55,7 +55,7 @@ import CarretDown from './icons/CarretDown.vue';
             </div>
             <div class="tasks">
                 <p>Assigned Tasks <span class="redText">
-                       <CarretDown />3
+                        <CarretDown />3
                     </span></p>
                 <h1 class="boldNumber">12</h1>
             </div>
@@ -65,7 +65,7 @@ import CarretDown from './icons/CarretDown.vue';
                     </span></p>
                 <h1 class="boldNumber">6</h1>
             </div>
-            <div class="tasks">
+            <div class="tasks lastTask">
                 <p>Total project <span class="greenText">
                         <CarretUp />2
                     </span></p>
@@ -150,7 +150,7 @@ import CarretDown from './icons/CarretDown.vue';
                                     <p>-Candidate</p>
                                     <div class="allUsers">
                                         <img src="../assets/user.png" alt="user" />
- 
+
                                     </div>
                                 </div>
                             </td>
@@ -356,8 +356,16 @@ input {
     justify-content: center;
     padding: 20px;
     border: collapse;
-    border: 1px solid rgb(234, 228, 228);
-    border-radius: 10px;
+    border: 1px dashed rgb(234, 228, 228);
+    border-top: none;
+    border-bottom: none;
+}
+
+.firstTask {
+    border-left: none;
+}
+.lastTask {
+    border-right: none;
 }
 
 .greenText {
@@ -440,9 +448,11 @@ select {
     margin-top: 1.5vh;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 table {
@@ -460,16 +470,19 @@ thead {
     border: collapse;
     border: 1px solid rgb(234, 228, 228);
 }
+
 tbody {
     width: 100%;
     border: collapse;
     border: 1px solid rgb(234, 228, 228);
 }
+
 th {
     width: 20vw;
     border: collapse;
     border: 1px solid rgb(234, 228, 228);
 }
+
 td {
     width: 20vw;
     border: collapse;
@@ -480,7 +493,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #F4F8F9;
+    background-color: #F4F8F9;
 }
 
 .graph1 {
@@ -512,6 +525,7 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 10vw;
 }
+
 .graph5 {
     width: 10vw;
     height: 3vh;
@@ -519,6 +533,7 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 10vw;
 }
+
 .graph6 {
     width: 7vw;
     height: 3vh;
@@ -526,6 +541,7 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 14vw;
 }
+
 .graph7 {
     width: 10vw;
     height: 3vh;
@@ -533,6 +549,7 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 18vw;
 }
+
 .graph8 {
     width: 15vw;
     height: 3vh;
@@ -540,6 +557,7 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 20vw;
 }
+
 .graph9 {
     width: 35vw;
     height: 3vh;
@@ -547,10 +565,11 @@ tr:nth-child(even) {
     text-align: center;
     margin-left: 13vw;
 }
+
 .allUsers {
-    display: flex ;
+    display: flex;
     /* justify-content: center; */
-    /* align-items: center; */   
+    /* align-items: center; */
 }
 
 .sideHead {
@@ -604,6 +623,9 @@ tr:nth-child(even) {
         flex-direction: column;
         justify-content: center;
         padding: 15px;
+        border: collapse;
+        border: 1px solid rgb(234, 228, 228);
+        border-radius: 10px;
 
     }
 
@@ -613,7 +635,7 @@ tr:nth-child(even) {
         margin-right: 3vw; */
         padding: 10px;
         width: 100vw;
-    }   
+    }
 
     .subnav {
         flex-direction: column;
@@ -639,6 +661,7 @@ tr:nth-child(even) {
         justify-content: center;
         align-items: center;
     }
+
     table {
         width: 100%;
         margin-top: 2vh;

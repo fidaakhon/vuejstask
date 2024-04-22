@@ -68,7 +68,7 @@ export default {
     align-items: center;
     height: 100vh;
     background-color: #fff;
-    width: 90vw;
+    width: 100vw;
 }
 
 .logo_heading {
@@ -211,7 +211,7 @@ input {
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 90vw;
+        width: 100vw;
         margin-top: -15px;
     }
 
@@ -254,6 +254,7 @@ input {
 
     .footer {
         width: 80vw;
+        bottom: 30px;
     }
 
 }

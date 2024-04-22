@@ -67,7 +67,7 @@ export default {
     align-items: center;
     height: 100vh;
     background-color: #fff;
-    width: 90vw;
+    width: 100vw;
     font: Poppins;
 }
 
@@ -169,7 +169,7 @@ input {
 
 .footer {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     width: 30vw;
     font-size: 16px;
     font: poppins;
@@ -186,12 +186,13 @@ input {
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 90vw;
+        width: 100vw;
         margin-top: -15px;
     }
 
     .headings_inputs {
         width: 80vw;
+        margin-top: -40px;
     }
 
     .subheading {
